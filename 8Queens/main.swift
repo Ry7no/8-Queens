@@ -7,5 +7,7 @@
 
 import Foundation
 
-print("Hello, World!")
+print("\(solveNQueens(8).count)")
+print("\(solveNQueens(8))")
+
 
