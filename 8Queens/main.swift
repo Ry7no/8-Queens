@@ -7,7 +7,13 @@
 
 import Foundation
 
-print("\(solveNQueens(8).count)")
-print("\(solveNQueens(8))")
+print("Please enter a number for N-queens puzzle (default number is 8)")
+
+let userInput = readLine() ?? ""
+var queenNum = Int(userInput) ?? 8
+
+print("Here is the solution for \(queenNum)-queens puzzle \nOutput:")
+print("1. Total \(solveNQueens(queenNum).count) solutions for \(queenNum)-queens puzzle")
+print("2. \(solveNQueens(queenNum))")
 
 

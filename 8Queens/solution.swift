@@ -31,7 +31,7 @@ func solveNQueens(_ n: Int) -> [[String]] {
         for c in 0..<n {
             let checkPosDiag = row+c
             let checkNegDiag = row-c
-            if col.contains(c) || posDiag.contains(checkPosDiag) || negDiag.contains(checkNegDiag) {
+            if col.contains(c) || posDiag.contains(checkPosDiag) || negDiag.contains(checkNegDiag){
                 continue
             }
             
@@ -47,9 +47,7 @@ func solveNQueens(_ n: Int) -> [[String]] {
             negDiag.remove(checkNegDiag)
             board[row][c] = "."
         }
-        
     }
-    
     backtracking(0)
     return res
 }
