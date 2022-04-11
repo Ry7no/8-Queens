@@ -10,7 +10,7 @@ import Foundation
 print("Please enter a number for N-queens puzzle (default number is 8)")
 
 let userInput = readLine() ?? ""
-var queenNum = Int(userInput) ?? 8
+let queenNum = Int(userInput) ?? 8
 
 print("Here is the solution for \(queenNum)-queens puzzle \nOutput:")
 print("1. Total \(solveNQueens(queenNum).count) solutions for \(queenNum)-queens puzzle")
